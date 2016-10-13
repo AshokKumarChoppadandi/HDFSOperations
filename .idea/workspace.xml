@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da1af51c-6099-4a9d-a335-2ca68a4e2b38" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HdfsOperations.java" afterPath="$PROJECT_DIR$/src/HdfsOperations.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead.java" afterPath="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java" afterPath="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java" />
     </list>
     <ignored path="HdfsRead.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HdfsAllOperations.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HdfsAllOperations.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+            <state relative-caret-position="443">
+              <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HdfsOperations.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HdfsOperations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HdfsOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+            <state relative-caret-position="317">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,9 +95,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead2.java" />
         <option value="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead3.java" />
-        <option value="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java" />
         <option value="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead.java" />
         <option value="$PROJECT_DIR$/src/HdfsOperations.java" />
+        <option value="$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java" />
       </list>
     </option>
   </component>
@@ -595,7 +596,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="750" extended-state="0" />
+    <frame x="0" y="25" width="1280" height="750" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -696,16 +697,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WordCountInput" />
     <entry file="file://$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead2.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsFileRead3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -728,8 +719,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HdfsOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="73" column="10" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+        <state relative-caret-position="317">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cloudwick/fileIO/HdfsAllOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

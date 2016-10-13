@@ -13,9 +13,7 @@ import java.util.Scanner;
  * Created by cloudwick on 10/12/16.
  */
 
-
 public class HdfsOperations extends Configured implements Tool{
-
     @Override
     public int run(String[] strings) throws Exception {
         if(strings.length > 0){
@@ -37,7 +35,6 @@ public class HdfsOperations extends Configured implements Tool{
         System.out.print("\nEnter your choice :: ");
 
         Scanner sc = new Scanner(System.in);
-
         int input = sc.nextInt();
         String file;
         Path path;
@@ -70,19 +67,6 @@ public class HdfsOperations extends Configured implements Tool{
                       "Please Enter the Correct choice...!!!");
                       break;
         }
-
-        /*
-        //Path filePath = new Path("hdfs://localhost:8020/user/cloudwick/Ashok");
-        //h_ops.createFile(filePath);
-        //Path filePath = new Path("hdfs://localhost:8020/user/cloudwick/Ashok");
-        //h_ops.deleteFile(filePath);
-        //Path filePath = new Path("hdfs://localhost:8020/user/cloudwick/WordCountInput");
-        //h_ops.readFile(filePath);
-        Path filePath = new Path("hdfs://localhost:8020/user/cloudwick/HDFSTestFile");
-        File file = new File("TestFile");
-        h_ops.writeFile(file, filePath);
-        */
-
         h_ops.closeFileSystem();
         return 0;
     }

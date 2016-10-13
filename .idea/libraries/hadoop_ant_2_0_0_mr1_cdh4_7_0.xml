@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="hadoop-ant-2.0.0-mr1-cdh4.7.0">
+    <CLASSES>
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-ant-2.0.0-mr1-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-ant.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-core-2.0.0-mr1-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-core.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-examples-2.0.0-mr1-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-examples.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-test-2.0.0-mr1-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-test.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-tools-2.0.0-mr1-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop-0.20-mapreduce/hadoop-tools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

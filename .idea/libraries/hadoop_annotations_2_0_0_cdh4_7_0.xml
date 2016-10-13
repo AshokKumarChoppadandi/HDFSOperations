@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="hadoop-annotations-2.0.0-cdh4.7.0">
+    <CLASSES>
+      <root url="jar:///usr/lib/hadoop/hadoop-annotations-2.0.0-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop/hadoop-annotations.jar!/" />
+      <root url="jar:///usr/lib/hadoop/hadoop-auth-2.0.0-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop/hadoop-auth.jar!/" />
+      <root url="jar:///usr/lib/hadoop/hadoop-common-2.0.0-cdh4.7.0-tests.jar!/" />
+      <root url="jar:///usr/lib/hadoop/hadoop-common-2.0.0-cdh4.7.0.jar!/" />
+      <root url="jar:///usr/lib/hadoop/hadoop-common.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

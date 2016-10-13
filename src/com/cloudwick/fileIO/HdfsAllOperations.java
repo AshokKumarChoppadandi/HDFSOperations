@@ -6,7 +6,7 @@ import org.apache.hadoop.fs.*;
 import java.io.*;
 
 /**
- * Created by cloudwick on 10/12/16.
+ * Created by AshokKumarChoppadandi on 10/12/16.
  */
 public class HdfsAllOperations {
 

@@ -8,14 +8,22 @@ import org.apache.hadoop.fs.Path;
 import java.io.*;
 
 /**
- * Created by cloudwick on 9/23/16.
+ * Created by AshokKumarChoppadandi on 9/23/16.
  */
 public class HdfsFileRead
 {
+    /**
+     * Default Constructor
+     */
     public HdfsFileRead() {
 
     }
 
+    /**
+     * @param file - HDFS File to read
+     * @param conf - HDFS Configuration
+     * @throws IOException - Throws Exception if the File System not found.
+     */
     public void readFile(String file, Configuration conf) throws IOException
     {
         FileSystem fs = FileSystem.get(conf);
@@ -50,6 +58,11 @@ public class HdfsFileRead
         br.close();
         fs.close();
     }
+
+    /**
+     * @param args - Command Line Arguments
+     * @throws IOException - Throws Exception if the any problem occurs in calling 'readFile' Method
+     */
     public static void main(String[] args) throws IOException
     {
         HdfsFileRead hfs = new HdfsFileRead();

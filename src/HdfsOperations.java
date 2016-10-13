@@ -10,10 +10,15 @@ import java.io.File;
 import java.util.Scanner;
 
 /**
- * Created by cloudwick on 10/12/16.
+ * Created by AshokKumarChoppadandi on 10/12/16.
  */
 
 public class HdfsOperations extends Configured implements Tool{
+    /**
+     * @param strings - Run Time Arguments
+     * @return - An integer value, to identify the Execution.
+     * @throws Exception - Throws Exception if File System not found
+     */
     @Override
     public int run(String[] strings) throws Exception {
         if(strings.length > 0){
@@ -71,6 +76,10 @@ public class HdfsOperations extends Configured implements Tool{
         return 0;
     }
 
+    /**
+     * @param args - Command Line Arguments
+     * @throws Exception - Throws Exception in calling the run Method.
+     */
     public static void main(String[] args) throws Exception {
         int returnCode = ToolRunner.run(new HdfsOperations(), args);
         System.exit(returnCode);

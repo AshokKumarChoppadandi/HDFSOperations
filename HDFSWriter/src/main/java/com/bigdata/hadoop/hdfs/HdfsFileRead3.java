@@ -1,4 +1,4 @@
-package com.cloudwick.fileIO;
+package com.bigdata.hadoop.hdfs;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -17,11 +17,12 @@ public class HdfsFileRead3 {
      * @param args - Command line Arguments
      */
     public static void main(String[] args) {
-        String namenode = "hdfs://localhost:8020";
-        String file = "hdfs://localhost:8020/user/cloudwick/WordCountInput";
+        //String nameNode = "hdfs://localhost:8020";
+        String nameNode = args[0];
+        String file = args[1];
         Configuration conf = new Configuration();
-        //conf.set("fs.default.name", namenode);
-        conf.set("fs.defaultFS", namenode);
+        //conf.set("fs.default.name", nameNode);
+        conf.set("fs.defaultFS", nameNode);
         try{
             readFile(conf, file);
         } catch (IOException ioe){
@@ -48,4 +49,3 @@ public class HdfsFileRead3 {
         }
     }
 }
- 

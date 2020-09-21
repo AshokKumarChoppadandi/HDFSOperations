@@ -1,4 +1,4 @@
-package com.cloudwick.fileIO;
+package com.bigdata.hadoop.hdfs;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.*;
@@ -11,8 +11,8 @@ import java.io.*;
 public class HdfsAllOperations {
 
     /**
-    * Initializing the FileSystem
-    */
+     * Initializing the FileSystem
+     */
     private static FileSystem fs;
 
     /**

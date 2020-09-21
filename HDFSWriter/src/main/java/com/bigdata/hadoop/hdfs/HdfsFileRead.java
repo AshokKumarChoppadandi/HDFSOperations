@@ -1,4 +1,4 @@
-package com.cloudwick.fileIO;
+package com.bigdata.hadoop.hdfs;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -66,8 +66,8 @@ public class HdfsFileRead
     public static void main(String[] args) throws IOException
     {
         HdfsFileRead hfs = new HdfsFileRead();
-        String hdfsPath = "hdfs://localhost:8020";
-        String filePath = "hdfs://localhost:8020/user/cloudwick/WordCountInput";
+        String hdfsPath = args[0];
+        String filePath = args[1];
         Configuration conf = new Configuration();
         conf.set("fs.default.name", hdfsPath);
         hfs.readFile(filePath, conf);

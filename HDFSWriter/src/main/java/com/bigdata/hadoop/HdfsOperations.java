@@ -1,5 +1,6 @@
+package com.bigdata.hadoop;
 
-import com.cloudwick.fileIO.HdfsAllOperations;
+import com.bigdata.hadoop.hdfs.HdfsAllOperations;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
@@ -46,31 +47,31 @@ public class HdfsOperations extends Configured implements Tool{
 
         switch (input){
             case 1 : System.out.print("Please enter the file name to create :: ");
-                     file = sc.next();
-                     path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
-                     h_ops.createFile(path);
-                     break;
+                file = sc.next();
+                path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
+                h_ops.createFile(path);
+                break;
             case 2 : System.out.println("Please enter the file name to read :: ");
-                     file = sc.next();
-                     path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
-                     h_ops.readFile(path);
-                     break;
+                file = sc.next();
+                path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
+                h_ops.readFile(path);
+                break;
             case 3 : System.out.println("Please enter the file name to delete :: ");
-                     file = sc.next();
-                     path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
-                     h_ops.deleteFile(path);
-                     break;
+                file = sc.next();
+                path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
+                h_ops.deleteFile(path);
+                break;
             case 4 : System.out.println("Please enter the Source File Location :: ");
-                     file = sc.next();
-                     File f = new File(file);
-                     System.out.println("Please enter the Destination File Name :: ");
-                     file = sc.next();
-                     path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
-                     h_ops.writeFile(f, path);
-                     break;
+                file = sc.next();
+                File f = new File(file);
+                System.out.println("Please enter the Destination File Name :: ");
+                file = sc.next();
+                path = new Path(conf.get("fs.defaultFS") + "/user/cloudwick/" + file);
+                h_ops.writeFile(f, path);
+                break;
             default : System.out.println("You Have entered an Invalid Choice.\n" +
-                      "Please Enter the Correct choice...!!!");
-                      break;
+                    "Please Enter the Correct choice...!!!");
+                break;
         }
         h_ops.closeFileSystem();
         return 0;

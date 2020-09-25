@@ -1,21 +1,23 @@
 package com.bigdata.spark
 
-import com.bigdata.spark.listener.CustomSparkListener
+import com.bigdata.spark.listener.{ApplicationLevelMetricsSparkListener, CustomSparkListener}
 import org.apache.spark.sql.SparkSession
 import org.slf4j.{Logger, LoggerFactory}
 
 object HDFSJsonWriter {
   val logger: Logger = LoggerFactory.getLogger("HDFSJsonWriter")
   def main(args: Array[String]): Unit = {
-    val appName = args(0)
-    val configOutputFile = args(1)
+    val appName = "WordCount"
+    val configOutputFile = "/Users/achoppadandi/IdeaProjects/HDFSOperations/HDFSWriter/src/main/resources/JsonMetricsFiles/output.json"
 
     val spark = SparkSession
       .builder()
       .appName(appName)
+      .master("local")
       .getOrCreate()
 
-    spark.sparkContext.addSparkListener(new CustomSparkListener(configOutputFile, spark, logger))
+    //spark.sparkContext.addSparkListener(new CustomSparkListener(configOutputFile, spark, logger))
+    spark.sparkContext.addSparkListener(new ApplicationLevelMetricsSparkListener)
     //spark.sparkContext.setLogLevel("ERROR")
 
     import spark.implicits._
